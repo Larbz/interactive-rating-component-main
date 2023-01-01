@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+:root {
+  --Orange: hsl(25, 97%, 53%);
+  --White: hsl(0, 0%, 100%);
+  --Light-Grey: hsl(217, 12%, 63%);
+  --Medium-Grey: hsl(216, 12%, 54%);
+  --Dark-Blue: hsl(213, 19%, 18%);
+  --Very-Dark-Blue: hsl(216, 12%, 8%);
+  --Overpass: "Overpass", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+  font-size: 62.5%;
+  font-family: var(--Overpass);
+}
+body {
+  height: 100%;
+  background-color: var(--Very-Dark-Blue);
+  display: grid;
+  place-items: center;
+}
+p {
+  font-size: 1.5rem;
+}
+.attribution {
+  font-size: 1.1rem;
+  text-align: center;
+  color: var(--White);
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.card {
+  width: 36em;
+  background: linear-gradient(to right, #1e252f, #171e28);
+  border-radius: 15px;
+  padding: 3em;
+}
+.card__question {
+  color: var(--White);
+  font-size: 2.5rem;
+}
+.card__paragraph {
+  color: var(--Light-Grey);
+}
+.card__ratings {
+  display: flex;
+  justify-content: space-between;
+}
+.card__rate {
+  text-decoration: none;
+  border-radius: 50%;
+  width: 3.5em;
+  height: 3.5em;
+  border: none;
+  background-color: #262f38;
+  color: var(--Light-Grey);
+  font-size: 1.4rem;
+  font-family: var(--Overpass);
+  cursor: pointer;
+}
+.card__rate:hover {
+  background-color: var(--Orange);
+  color: var(--White);
+}
+.card__rate:focus {
+  background-color: var(--Orange);
+  color: var(--White);
+}
+.card__star {
+  border-radius: 50%;
+  width: 4.9em;
+  height: 4.9em;
+  background-color: #262f38;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rate {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6em;
+}
+.card__submit {
+  text-decoration: none;
+  width: 100%;
+  padding: 1em;
+  background-color: var(--Orange);
+  text-transform: uppercase;
+  color: var(--White);
+  letter-spacing: 1.2px;
+  text-align: center;
+  border-radius: 30px;
+  font-size: 1.2rem;
+}
+.card__submit:hover {
+  background-color: var(--White);
+  color: var(--Orange);
+}
+
+.greetings {
+  display: none;
+  flex-direction: column;
+  gap: 1.6em;
+  text-align: center;
+}
+.greetings__img {
+  width: 13em;
+  align-self: center;
+  padding-top: 1em;
+}
+.greetings__resume {
+  background-color: #262f38;
+  display: inline;
+  padding: 0.4em 0.8em;
+  width: fit-content;
+  align-self: center;
+  border-radius: 10px;
+  color: var(--Orange);
+}
+.greetings__title {
+  color: var(--White);
+  font-size: 2rem;
+  padding-top: 0.5em;
+}
+.greetings__paragraph {
+  color: var(--Medium-Grey);
+  padding-bottom: 1.6em;
+}
